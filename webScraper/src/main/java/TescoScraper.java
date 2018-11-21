@@ -1,53 +1,84 @@
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class TescoScraper {
-	
-	/** Constructor */
-    TescoScraper(){
-        try{
-            scrapeCornflakes("cornflakes");
-        }
-        catch(Exception ex){
-            ex.printStackTrace();
-        }
-    }
-    
-    
-    /** Scrapes data from the Tesco website */
-    void scrapeCornflakes(String name) throws Exception{
-        //Name of item that we want to scrape
-        String itemName = name;
-        
-        //Download HTML document from website
-        Document doc = Jsoup.connect("https://www.tesco.com/groceries/en-GB/search?query=" + itemName).get();
-        
-        
-        
-        //Get all of the products on the page
-        Elements prods = doc.select(".product-list");
-        
-        System.out.println(prods);
-//        Work through the products
-        for(int i=0; i<prods.size(); ++i){
-            
-            //Get the product description
-            Elements description = prods.get(i).select(".product-tile--title");
-            
-            
-            //Get the product price
-            Elements price1 = prods.get(i).select(".value");
+public class TescoScraper implements ScrapesWebsites{
+
+	private String productName;
+	private String url;
+	private String imgUrl;
+	private String price;
+	private String weight;
+	private String brandName;
 
 
-//            
-////            Get the weight
-//            Elements weight = prods.get(i).select(".sizeMessage___33nJ_");
+	/**
+	 * {@inheritDoc}
+	 */
+	public void scrape(String query) throws Exception {
+		Document doc = Jsoup.connect("https://www.tesco.com/groceries/en-GB/search?query=" + query).get();
 
-//            
-//            Output the data that we have downloaded
-            System.out.println("DESCRIPTION: " + description.text() + "; PRICE: " + price1.text());
-        }
-    }
+		// List<Product> __ = new ArrayList<>();
+		Elements products = doc.select("ul.product-list").get(0).select("li.product-list--list-item");
+
+		System.out.println(products.size());
+			
+
+		for (Element product : products) {
+
+//			if(!product.hasAttr("data-sku")) {
+//				continue;
+//			}
+//
+			// extracts image url        	
+
+			imgUrl = product.select("img").get(0).attr("src");
+
+			System.out.println(imgUrl);
+			// extracts url
+
+			url = product.select("a").get(0).attr("abs:href");
+			
+			System.out.println(url);
+
+			// extracts price
+
+			price = product.select("span.value").get(0).text();
+			
+			System.out.println(price);
+
+			// extracts product name 
+
+			productName = product.select("a").get(1).text();
+			
+			System.out.println(productName);
+
+			// extracts brand name 
+			String[] strArr = productName.split(" ");
+			brandName = strArr[0];
+			
+			System.out.println(brandName);
+
+			//extracts product weight
+
+			weight = strArr[strArr.length - 1];
+
+
+			System.out.println(weight);
+
+			// Get data here.
+			// Validate - Hibernate entities have validation using annotations.
+			// Create entity
+			// __.add(p)
+
+		}
+
+		// You can either return the list.
+		// return __
+
+		// If async, you'd need a persistor dependency or you can save it directly in here
+
+	}
 
 }
