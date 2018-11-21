@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String [] args) throws Exception {    	
     	
-    	ScrapesWebsites scraper = new OcadoScraper();
+    	ScrapesWebsites scraper = new WaitroseScraper();
     	
      	
     	scraper.scrape("water");

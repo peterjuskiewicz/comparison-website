@@ -3,7 +3,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class TescoScraper implements ScrapesWebsites{
+public class TescoScraper implements ScrapesWebsites {
 
 	private String productName;
 	private String url;
