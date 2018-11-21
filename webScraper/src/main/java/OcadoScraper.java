@@ -31,14 +31,33 @@ public class OcadoScraper implements ScrapesWebsites {
 
 //       	System.out.println(product);
         	
-        	price = product.select(".fop-price").text();
+        	// extracts image url        	
+        	
         	imgUrl = product.select("img.fop-img").attr("abs:src");
+        	
+        	// extracts url
+        	
         	url = product.select("a").get(0).attr("abs:href");
+        	
+        	// extracts price
+        	
+        	price = product.select(".fop-price").text();
+        	
+        	//extracts product weight
+        	
+        	weight = product.select(".fop-catch-weight").text();
+        	
+        	// extracts product name 
+        	
         	productName = product.select("h4.fop-title").attr("title");
         	
+        	// extracts brand name 
+    		String[] strArr = productName.split(" ");
+    		brandName = strArr[0];
         	
         	
-        	System.out.println(productName);
+        	
+        	System.out.println(weight);
         	
         	// Get data here.
         	// Validate - Hibernate entities have validation using annotations.
