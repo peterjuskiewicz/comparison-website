@@ -1,3 +1,4 @@
+package com.piotr.scraper;
 
 public interface ScrapesWebsites {
 	/**
@@ -7,4 +8,5 @@ public interface ScrapesWebsites {
 	 * @throws Exception
 	 */
 	void scrape(String query) throws Exception;
+	
 }

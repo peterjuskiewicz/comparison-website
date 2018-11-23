@@ -5,6 +5,10 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
+import com.piotr.model.Product;
+import com.piotr.model.Retailer;
+import com.piotr.model.RetailerProduct;
+
 public class HibernateSession {
 
 	//Creates new Sessions when we need to interact with the database 
@@ -63,20 +67,29 @@ public class HibernateSession {
 		Session session = sessionFactory.getCurrentSession();
 
 		//Create an instance of a Cereal class 
-		ProductAnnotation product = new ProductAnnotation();
-
-		//Set values of Cereal class that we want to add
-		product.setId(1);
+		Product product = new Product();
+		Retailer retailer = new Retailer();
+		RetailerProduct retailerProduct = new RetailerProduct();
+		
+		product.setBrand("test");
 		product.setName("test");
-		product.setBrand(11);
-		product.setSize(25);
-
-
+		product.setSize("111");
+		
+		retailer.setName("Sainsburys");
+		
+		
+		retailerProduct.setRetailerId(retailer);
+		retailerProduct.setProductId(product);
+		retailerProduct.setUrl("testURL");
+		retailerProduct.setPrice(100.1f);
+		
 		//Start transaction
 		session.beginTransaction();
 
 		//Add Cereal to database - will not be stored until we commit the transaction
 		session.save(product);
+		session.save(retailer);
+		session.save(retailerProduct);
 
 		//Commit transaction to save it to database
 		session.getTransaction().commit();

@@ -1,3 +1,7 @@
+import com.piotr.scraper.OcadoScraper;
+import com.piotr.scraper.ScrapesWebsites;
+import com.piotr.scraper.WaitroseScraper;
+
 /** Simple Hibernate example */
 
 public class Main {
@@ -5,9 +9,10 @@ public class Main {
     public static void main(String [] args) throws Exception {    	
     	
     	ScrapesWebsites scraper = new WaitroseScraper();
-    	
-     	
-    	scraper.scrape("water");
+    	ScrapesWebsites scraper1 = new OcadoScraper();
+//     	
+    	scraper.scrape("milk");
+    	scraper1.scrape("milk");
     	
     	
 //    	

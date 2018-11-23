@@ -1,3 +1,4 @@
+package com.piotr.scraper;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -39,17 +40,25 @@ public class OcadoScraper implements ScrapesWebsites {
         	
         	url = product.select("a").get(0).attr("abs:href");
         	
+        	System.out.println(url);
+        	
         	// extracts price
         	
         	price = product.select(".fop-price").text();
+        	
+        	System.out.println(price);
         	
         	//extracts product weight
         	
         	weight = product.select(".fop-catch-weight").text();
         	
+        	System.out.println(weight);
+        	
         	// extracts product name 
         	
         	productName = product.select("h4.fop-title").attr("title");
+        	
+        	System.out.println(productName);
         	
         	// extracts brand name 
     		String[] strArr = productName.split(" ");

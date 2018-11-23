@@ -1,3 +1,4 @@
+package com.piotr.model;
 import javax.persistence.*;
 
 @Entity

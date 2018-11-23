@@ -1,9 +1,10 @@
+package com.piotr.scraper;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class WaitroseScraper implements ScrapesWebsites{
+public class WaitroseScraper extends Thread implements ScrapesWebsites{
 	
 	private String productName;
 	private String url;
@@ -13,9 +14,10 @@ public class WaitroseScraper implements ScrapesWebsites{
 	private String brandName;
 
 
-	/**
-	 * {@inheritDoc}
+	/* (non-Javadoc)
+	 * @see com.piotr.scraper.TestInterface#scrape(java.lang.String)
 	 */
+	@Override
 	public void scrape(String query) throws Exception {
 		 Document doc = Jsoup.connect("https://www.waitrose.com/ecom/shop/search?&searchTerm=" + query).get();
 
@@ -42,7 +44,7 @@ public class WaitroseScraper implements ScrapesWebsites{
 //
 			url = product.select("div.gtm___3QuoL").select("a").attr("abs:href");
 			
-//			System.out.println(url);
+			System.out.println(url);
 //
 //			// extracts price
 //
@@ -54,20 +56,20 @@ public class WaitroseScraper implements ScrapesWebsites{
 
 			productName = product.select("span.name___2sgmL").text();
 //			
-//			System.out.println(productName);
+			System.out.println(productName);
 //
 //			// extracts brand name 
 			String[] strArr = productName.split(" ");
 			brandName = strArr[0];
 //			
-//			System.out.println(brandName);
+			System.out.println(brandName);
 //
 //			//extracts product weight
 //
 			weight = product.select("span.size___2HSwr").get(0).text();
 //
 ////
-//			System.out.println(weight);
+			System.out.println(weight);
 
 			// Get data here.
 			// Validate - Hibernate entities have validation using annotations.
