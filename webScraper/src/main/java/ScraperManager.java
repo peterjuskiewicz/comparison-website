@@ -7,7 +7,7 @@ public class ScraperManager {
 	
 	String[] productsArray = {"water", "yogurth", "cereal"};
 	
-	TescoScraper scraper;
+	WaitroseScraper scraper;
 	MorrisonsScraper morrisonsScraper;
 	TescoScraper tescoScraper;
 	OcadoScraper ocadoScraper;
@@ -25,11 +25,11 @@ public class ScraperManager {
 		}	
 	}
 
-	public TescoScraper getScraper() {
+	public WaitroseScraper getScraper() {
 		return scraper;
 	}
 
-	public void setScraper(TescoScraper scraper) {
+	public void setScraper(WaitroseScraper scraper) {
 		this.scraper = scraper;
 	}
 	

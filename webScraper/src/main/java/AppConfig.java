@@ -17,7 +17,7 @@ public class AppConfig {
     @Bean
     public ScraperManager scraperManager(){
         ScraperManager manager = new ScraperManager();
-        manager.setScraper(scraper3());
+        manager.setScraper(scraper4());
         return manager;
     }
 
@@ -47,6 +47,15 @@ public class AppConfig {
         scraper.setRetailerDao(retailerDao());
         scraper.setRetailerProductDao(retailerProductDao());
         return (TescoScraper) scraper;
+    }
+    
+    @Bean
+    public WaitroseScraper scraper4(){
+    	WaitroseScraper scraper = new WaitroseScraper();
+        scraper.setProductDao(productDao());
+        scraper.setRetailerDao(retailerDao());
+        scraper.setRetailerProductDao(retailerProductDao());
+        return (WaitroseScraper) scraper;
     }
     
     
