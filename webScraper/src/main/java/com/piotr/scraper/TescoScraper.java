@@ -35,7 +35,7 @@ public class TescoScraper extends Thread implements ScrapesWebsites {
 
 
 	@Override
-	public void start() {
+	public void run() {
 
 		try {
 			scrape("test");

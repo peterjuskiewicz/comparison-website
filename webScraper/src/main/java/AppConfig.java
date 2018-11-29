@@ -17,7 +17,10 @@ public class AppConfig {
     @Bean
     public ScraperManager scraperManager(){
         ScraperManager manager = new ScraperManager();
-        manager.setScraper(scraper4());
+        manager.setMorrisonsScraper(scraper1());
+        manager.setOcadoScraper(scraper2());
+        manager.setTescoScraper(scraper3());
+        manager.setWaitroseScraper(scraper4());
         return manager;
     }
 
