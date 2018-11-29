@@ -4,6 +4,10 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.piotr.dao.impl.ProductDaoImpl;
+import com.piotr.dao.impl.RetailerDaoImpl;
+import com.piotr.dao.impl.RetailerProductDaoImpl;
+
 public class WaitroseScraper extends Thread implements ScrapesWebsites{
 	
 	private String productName;
@@ -12,6 +16,10 @@ public class WaitroseScraper extends Thread implements ScrapesWebsites{
 	private String price;
 	private String weight;
 	private String brandName;
+	
+	private ProductDaoImpl productDao;
+	private RetailerDaoImpl retailerDao;
+	private RetailerProductDaoImpl retailerProductDao;
 
 
 	/* (non-Javadoc)
@@ -44,32 +52,29 @@ public class WaitroseScraper extends Thread implements ScrapesWebsites{
 //
 			url = product.select("div.gtm___3QuoL").select("a").attr("abs:href");
 			
-			System.out.println(url);
 //
 //			// extracts price
 //
 			price = product.select("div.prices___1JkR4").select("span > span").text();
 //			
-			System.out.println(price);
 //
 			// extracts product name 
 
 			productName = product.select("span.name___2sgmL").text();
 //			
-			System.out.println(productName);
 //
 //			// extracts brand name 
 			String[] strArr = productName.split(" ");
 			brandName = strArr[0];
 //			
-			System.out.println(brandName);
 //
 //			//extracts product weight
 //
 			weight = product.select("span.size___2HSwr").get(0).text();
 //
 ////
-			System.out.println(weight);
+			System.out.println("Waitrose Weight: " + weight + " Brand: " + brandName + " Product: " + productName +
+					" Price: " + price + " url " + url);
 
 			// Get data here.
 			// Validate - Hibernate entities have validation using annotations.

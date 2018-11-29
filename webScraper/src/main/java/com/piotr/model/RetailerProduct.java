@@ -1,5 +1,6 @@
 package com.piotr.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,6 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -19,43 +21,43 @@ public class RetailerProduct {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	
-	@ManyToOne
-	@JoinColumn(name="product_id", referencedColumnName="id")
-	private Product productId;
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="product_id", nullable=false)
+	private Product product;
 	
-	
-	@ManyToOne
-	@JoinColumn(name="retailer_id", referencedColumnName="id")
-	private Retailer retailerId;
+
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="retailer_id", nullable=false)
+	private Retailer retailer;
 	
 	
 	@Column
-	private float price;
+	private String price;
 	
 	@Column
 	private String url;
 
-	public Product getProductId() {
-		return productId;
+	public Product getProduct() {
+		return product;
 	}
 
-	public void setProductId(Product productId) {
-		this.productId = productId;
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
-	public Retailer getRetailerId() {
-		return retailerId;
+	public Retailer getRetailer() {
+		return retailer;
 	}
 
-	public void setRetailerId(Retailer retailerId) {
-		this.retailerId = retailerId;
+	public void setRetailer(Retailer retailer) {
+		this.retailer = retailer;
 	}
 
-	public float getPrice() {
+	public String getPrice() {
 		return price;
 	}
 
-	public void setPrice(float price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
 

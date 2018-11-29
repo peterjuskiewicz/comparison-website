@@ -1,47 +1,27 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.piotr.scraper.MorrisonsScraper;
 import com.piotr.scraper.OcadoScraper;
 import com.piotr.scraper.ScrapesWebsites;
+import com.piotr.scraper.TescoScraper;
 import com.piotr.scraper.WaitroseScraper;
 
 /** Simple Hibernate example */
 
 public class Main {
 
-    public static void main(String [] args) throws Exception {    	
+    public static void main(String [] args) throws Exception {     	
+  	
+    	ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
     	
-    	ScrapesWebsites scraper = new WaitroseScraper();
-    	ScrapesWebsites scraper1 = new OcadoScraper();
-//     	
-    	scraper.scrape("milk");
-    	scraper1.scrape("milk");
+    	ScraperManager scraper = (ScraperManager) context.getBean("scraperManager");
     	
-    	
-//    	
-//    	for (String product : new String[] {
-//    			"water", "cereal", "yogurth"
-//    	}) {
-//    		
-//    		scraper.scrape(product);
-//        	
-//    	}
-        //Create a new instance of the HibernateExample class
-    	
-    	
-    	
-//        HibernateSession hibernateSession = new HibernateSession();
-        
-        //Set up the SessionFactory
-//        hibernateSession.init();
-        
-        //Example operations
-        
-//        hibernateSession.addCereal();
+    	scraper.startScraping();
 
-       // hibernateXmlExample.updateCereal();//Updates data
-        //hibernateXmlExample.searchCereals();//Search for data
-        //hibernateXmlExample.deleteCerealSafe();//Delete data
-        
-        //Shut down Hibernate
-//        hibernateSession.shutDown();
     }
 
 }

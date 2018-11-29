@@ -21,6 +21,8 @@
     <!-- Different RDBMSs have variations in the SQL that they support - specify MySQL-->
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     
+<!--     <property name="hibernate.hbm2ddl.auto">create</property> -->
+    
     <!-- Mapping with annotation - specify the annotated classes here -->
     <mapping class="com.piotr.model.Product"/>
     <mapping class="com.piotr.model.Retailer"/>
