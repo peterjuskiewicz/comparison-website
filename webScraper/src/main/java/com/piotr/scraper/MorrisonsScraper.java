@@ -126,9 +126,6 @@ public class MorrisonsScraper extends Thread implements ScrapesWebsites {
 
 	}
 
-	//Extract to superclass
-
-
 	private void modifyData(String brandName, String productName, String weight, String price, String url) {
 
 
@@ -172,5 +169,21 @@ public class MorrisonsScraper extends Thread implements ScrapesWebsites {
 	public void setRetailerProductDao(RetailerProductDaoImpl retailerProductDao) {
 		this.retailerProductDao = retailerProductDao;
 	}
+	
+	
+
+	public RetailerDaoImpl getRetailerDao() {
+		return retailerDao;
+	}
+
+	public RetailerProductDaoImpl getRetailerProductDao() {
+		return retailerProductDao;
+	}
+
+	public List<String> getProductList() {
+		return productList;
+	}
+	
+	
 
 }

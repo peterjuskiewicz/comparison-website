@@ -20,7 +20,13 @@ public class ScraperManager {
 		scraperList.add(tescoScraper);
 		scraperList.add(ocadoScraper);
 		scraperList.add(waitroseScraper);
+		
 	}
+	
+	/**
+	 * Method starts scraping 4 websites:
+	 * morrisons.com, tesco.com, ocado.com, waitrose.com 
+	 */
 
 	public void startScraping() throws Exception {
 
