@@ -10,39 +10,112 @@
   		<artifactId>jsoup</artifactId>
   		<version>1.11.3</version>
   	</dependency>
+  	
   	<dependency>
   		<groupId>org.hibernate</groupId>
   		<artifactId>hibernate-core</artifactId>
   		<version>5.3.7.Final</version>
   	</dependency>
+  	
   	<dependency>
   		<groupId>mysql</groupId>
   		<artifactId>mysql-connector-java</artifactId>
   		<version>8.0.13</version>
   	</dependency>
+  	
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-core</artifactId>
   		<version>5.1.2.RELEASE</version>
   	</dependency>
+  	
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-context</artifactId>
   		<version>5.1.2.RELEASE</version>
   	</dependency>
+  	
+  	<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-javadoc-plugin</artifactId>
+    <version>3.0.1</version>
+	</dependency>
+	
+	<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version>
+    <scope>test</scope>
+	</dependency>
+
+	
   </dependencies>
   
-  <resources>
+  <build>
+    <plugins>
+    
+    	<plugin>
+			  <artifactId>maven-clean-plugin</artifactId>
+			  <version>3.0.0</version>
+			</plugin>
+			
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>2.3.2</version>
+            <configuration>
+                <source>1.7</source>
+                <target>1.7</target>
+            </configuration>
+        </plugin>
+        
+       <!--  <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4.1</version>
+				<configuration>
+					get all project dependencies
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					MainClass in mainfest make a executable jar
+					<archive>
+					  <manifest>
+						<mainClass>Main</mainClass>
+					  </manifest>
+					</archive>
+				</configuration>
+				<executions>
+				  <execution>
+					<id>make-assembly</id>
+					<phase>package</phase>bind to the packaging phase 
+					<goals>
+						<goal>single</goal>
+					</goals>
+				  </execution>
+				</executions>
+			</plugin> -->
+        
+        
+    </plugins>
+    
+    
+    
+    
+    
+</build>
+  
+<!--   <resources>
+  
   	<resource>
   		<directory>src</directory>
   		<includes>
-		<!--Hibernate config files -->
+		Hibernate config files
 			<include>main/resources/hibernate.cfg.xml</include>
   		</includes>
   	</resource>
   
   </resources>
-  
+   -->
 
   
 </project>

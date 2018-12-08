@@ -1,0 +1,23 @@
+{
+  "name": "compare_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterjuskiewicz/comparison-website.git"
+  },
+  "author": "Peter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterjuskiewicz/comparison-website/issues"
+  },
+  "homepage": "https://github.com/peterjuskiewicz/comparison-website#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
