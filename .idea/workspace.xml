@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="05833b5b-35be-4ab1-bd7a-5830a229150a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/android-desktop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ios-desktop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webScraper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,20 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+            <state relative-caret-position="511">
+              <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+            <state relative-caret-position="365">
+              <caret line="261" column="30" lean-forward="true" selection-start-line="261" selection-start-column="30" selection-end-line="261" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -65,8 +60,8 @@
         <option value="$PROJECT_DIR$/page.html" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/website/app.js" />
-        <option value="$PROJECT_DIR$/website/server.js" />
         <option value="$PROJECT_DIR$/website/public/index.html" />
+        <option value="$PROJECT_DIR$/website/server.js" />
       </list>
     </option>
   </component>
@@ -150,12 +145,12 @@
       <updated>1539849931912</updated>
       <workItem from="1539849934573" duration="3391000" />
       <workItem from="1540190010123" duration="3705000" />
-      <workItem from="1544101245412" duration="18704000" />
+      <workItem from="1544101245412" duration="20293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25800000" />
+    <option name="totallyTimeSpent" value="27389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -279,17 +274,17 @@
     <entry file="file://$PROJECT_DIR$/website/app.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/server.js">
+    <entry file="file://$PROJECT_DIR$/website/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        <state relative-caret-position="365">
+          <caret line="261" column="30" lean-forward="true" selection-start-line="261" selection-start-column="30" selection-end-line="261" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/public/index.html">
+    <entry file="file://$PROJECT_DIR$/website/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+        <state relative-caret-position="511">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
         </state>
       </provider>
     </entry>

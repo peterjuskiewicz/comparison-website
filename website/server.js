@@ -23,6 +23,8 @@ var connectionPool = mysql.createPool({
 
 app.get("/products", handleGetRequest);
 
+app.get("/products/*", handleGetRequest);
+
 //Serve up static pages from public folder
 app.use(express.static('public'));
 
@@ -30,10 +32,20 @@ app.listen(8080);
 
 function handleGetRequest(request, response) {
 
+
+  let urlObj = url.parse(request.url, true);
+
+
+  let pathArray = urlObj.pathname.split("/");
+
+  let searchProduct = pathArray[pathArray.length - 1];
+
+  console.log(searchProduct);
+
   let sql = "SELECT product.brand, retailer_product.price, retailer_product.url, product.name " +
     "FROM product " +
     "INNER JOIN  retailer_product ON product.id = retailer_product.product_id " +
-    "WHERE product.brand  LIKE " + "'" + "Evian" + "'";
+    "WHERE product.brand  LIKE " + "'" + searchProduct + "'";
 
   connectionPool.query(sql, function(err, result) {
 
