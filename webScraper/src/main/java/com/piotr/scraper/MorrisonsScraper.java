@@ -34,6 +34,8 @@ public class MorrisonsScraper extends Thread implements ScrapesWebsites {
 	public MorrisonsScraper() {
 		this.productList = new ArrayList<>();
 		productList.add("water");
+		productList.add("yogurth");
+		productList.add("cereal");
 	}
 
 

@@ -12,16 +12,6 @@ public class ScraperManager {
 	TescoScraper tescoScraper;
 	OcadoScraper ocadoScraper;
 	WaitroseScraper waitroseScraper;
-
-	List<ScrapesWebsites> scraperList = new ArrayList<>();
-
-	{
-		scraperList.add(morrisonsScraper);
-		scraperList.add(tescoScraper);
-		scraperList.add(ocadoScraper);
-		scraperList.add(waitroseScraper);
-		
-	}
 	
 	/**
 	 * Method starts scraping 4 websites:
@@ -30,19 +20,6 @@ public class ScraperManager {
 
 	public void startScraping() throws Exception {
 
-		//		for(ScrapesWebsites scraper : scraperList) {
-		//			
-		//			try {
-		//				scraper.start();
-		//				morrisonsScraper.start();
-		//			} catch (Exception e) {
-		//				e.printStackTrace();
-		//			} finally {
-		//				scraper.getProductDao().getSession().close();
-		//				scraper.join();
-		//				
-		//			}
-		//		}
 
 		try {
 			morrisonsScraper.start();

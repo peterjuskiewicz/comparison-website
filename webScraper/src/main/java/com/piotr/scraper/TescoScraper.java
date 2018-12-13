@@ -31,6 +31,8 @@ public class TescoScraper extends Thread implements ScrapesWebsites {
 	public TescoScraper() {
 		this.productList = new ArrayList<>();
 		this.productList.add("water");
+		productList.add("yogurth");
+		productList.add("cereal");
 	}
 
 

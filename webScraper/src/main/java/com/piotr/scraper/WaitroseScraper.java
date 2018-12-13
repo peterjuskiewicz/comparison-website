@@ -32,6 +32,8 @@ public class WaitroseScraper extends Thread implements ScrapesWebsites{
 
 		this.productList = new ArrayList<>();
 		this.productList.add("water");
+		productList.add("yogurth");
+		productList.add("cereal");
 	}
 
 

@@ -3,8 +3,36 @@
   <component name="ChangeListManager">
     <list default="true" id="05833b5b-35be-4ab1-bd7a-5830a229150a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/src/main/java/ScraperManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/src/main/java/ScraperManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/src/main/java/com/piotr/scraper/MorrisonsScraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/src/main/java/com/piotr/scraper/MorrisonsScraper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/src/main/java/com/piotr/scraper/OcadoScraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/src/main/java/com/piotr/scraper/OcadoScraper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/src/main/java/com/piotr/scraper/TescoScraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/src/main/java/com/piotr/scraper/TescoScraper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/src/main/java/com/piotr/scraper/WaitroseScraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/src/main/java/com/piotr/scraper/WaitroseScraper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/ScraperManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/ScraperManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/Dao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/ProductDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/RetailerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/RetailerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/RetailerProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/RetailerProductDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/impl/ProductDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/impl/ProductDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/impl/RetailerDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/impl/RetailerDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/impl/RetailerProductDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/dao/impl/RetailerProductDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/model/Retailer.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/model/Retailer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/model/RetailerProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/model/RetailerProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/scraper/MorrisonsScraper.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/scraper/MorrisonsScraper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/scraper/OcadoScraper.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/scraper/OcadoScraper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/scraper/ScrapesWebsites.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/scraper/ScrapesWebsites.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/scraper/TescoScraper.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/scraper/TescoScraper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/scraper/WaitroseScraper.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/classes/com/piotr/scraper/WaitroseScraper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webScraper/target/test-classes/MorrisonsScraperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/webScraper/target/test-classes/MorrisonsScraperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,8 +50,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+            <state relative-caret-position="449">
+              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -31,8 +59,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="261" column="30" lean-forward="true" selection-start-line="261" selection-start-column="30" selection-end-line="261" selection-end-column="30" />
+            <state relative-caret-position="510">
+              <caret line="261" column="30" selection-start-line="261" selection-start-column="30" selection-end-line="261" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -145,12 +173,13 @@
       <updated>1539849931912</updated>
       <workItem from="1539849934573" duration="3391000" />
       <workItem from="1540190010123" duration="3705000" />
-      <workItem from="1544101245412" duration="20293000" />
+      <workItem from="1544101245412" duration="22241000" />
+      <workItem from="1544550658282" duration="470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27389000" />
+    <option name="totallyTimeSpent" value="29807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -188,6 +217,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/website/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="987">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5481">
+          <caret line="261" column="30" lean-forward="true" selection-start-line="261" selection-start-column="30" selection-end-line="261" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
@@ -195,13 +238,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4347">
-          <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
@@ -209,40 +246,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4347">
-          <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/http_status.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/productModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css" />
+    <entry file="file://$PROJECT_DIR$/style.css" />
+    <entry file="file://$PROJECT_DIR$/js/http_status.js" />
+    <entry file="file://$PROJECT_DIR$/js/productModel.js" />
+    <entry file="file://$PROJECT_DIR$/js/server.js" />
+    <entry file="file://$PROJECT_DIR$/app.js" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="535">
@@ -250,41 +259,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js" />
+    <entry file="file://$PROJECT_DIR$/page.html" />
+    <entry file="file://$PROJECT_DIR$/website/page.html" />
     <entry file="file://$PROJECT_DIR$/website/app.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/website/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="261" column="30" lean-forward="true" selection-start-line="261" selection-start-column="30" selection-end-line="261" selection-end-column="30" />
+        <state relative-caret-position="510">
+          <caret line="261" column="30" selection-start-line="261" selection-start-column="30" selection-end-line="261" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+        <state relative-caret-position="449">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
         </state>
       </provider>
     </entry>

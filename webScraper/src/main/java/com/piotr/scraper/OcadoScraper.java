@@ -31,6 +31,8 @@ public class OcadoScraper extends Thread implements ScrapesWebsites {
 	public OcadoScraper() {
 		this.productList = new ArrayList<>();
 		productList.add("water");
+		productList.add("yogurth");
+		productList.add("cereal");
 	}
 
 	@Override
