@@ -45,7 +45,7 @@ function handleGetRequest(request, response) {
   let sql = "SELECT product.brand, retailer_product.price, retailer_product.url, product.name " +
     "FROM product " +
     "INNER JOIN  retailer_product ON product.id = retailer_product.product_id " +
-    "WHERE product.brand  LIKE " + "'" + searchProduct + "'";
+    "WHERE product.name  LIKE " + "'%" + searchProduct + "%'";
 
   connectionPool.query(sql, function(err, result) {
 
